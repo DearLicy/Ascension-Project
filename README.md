@@ -38,7 +38,7 @@ graph TD
 
 1. **克隆仓库**
    ```bash
-   git clone https://github.com/yourusername/ascension-project.git
+   git clone https://github.com/DearLicy/ascension-project.git
    ```
 
 2. **本地运行**
@@ -63,7 +63,7 @@ ascension-project/
 
 ## 🌐 在线体验
 
-访问部署版本: [https://DearLicy.github.io/ascension-project](https://DearLicy.github.io/ascension-project)
+访问部署版本: [https://dearlicy.github.io/Ascension-Project](https://dearlicy.github.io/Ascension-Project)
 
 ## 🧪 开发指南
 
