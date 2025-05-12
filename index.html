@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>造神计划 - Ascension Project</title>
+    
+    <!-- BootCDN 静态资源 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg fixed-top blur-navbar">
+    <div class="container d-flex justify-content-between align-items-center"> <!-- 修改1：添加flex容器 -->
+        <a class="navbar-brand glow-logo d-flex align-items-center" href="/"> <!-- 修改2：品牌链接也设为flex -->
+            <i class="fas fa-atom me-2"></i>
+            <span class="d-none d-sm-inline">ΔSCENSION</span> <!-- 修改3：响应式文字显示 -->
+        </a>
+        
+        <!-- 移除navbar-collapse包装 直接显示菜单 -->
+        <ul class="navbar-nav d-flex flex-row"> <!-- 修改4：强制横向flex -->
+            <li class="nav-item mx-2"> <!-- 修改5：添加横向间距 -->
+                <a class="nav-link hover-underline" href="#manifesto">核心信条</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link hover-underline" href="#path">进化路径</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link hover-underline" href="#testimonials">见证者</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link hover-underline" href="/about.html">关于我们</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="hero-title animate__animated animate__fadeInDown">
+                        凡人之躯 亦可比肩神明
+                    </h1>
+                    <p class="lead fs-3 mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+                        通过90天系统训练重塑身心
+                    </p>
+                    <div class="d-grid gap-3 d-md-flex justify-content-center animate__animated animate__fadeIn animate__delay-2s">
+                        <button class="btn btn-cyber btn-lg px-5 me-md-3">
+                            <i class="fas fa-rocket me-2"></i>立即启程
+                        </button>
+                        <button class="btn btn-outline-light btn-lg px-5">
+                            <i class="fas fa-book me-2"></i>修炼手册
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心信条 -->
+    <section class="py-5" id="manifesto">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-4 mb-4">核心信条</h2>
+                    <p class="lead text-muted">六大支柱支撑你的进化之路</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="holo-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="phase-badge" style="color: var(--neon-blue);">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="mb-0">神经重构</h3>
+                        </div>
+                        <p>通过每日冥想与专注训练重建神经通路，提升多巴胺敏感度，戒除低级快感依赖。</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="holo-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="phase-badge" style="color: var(--matrix-green);">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <h3 class="mb-0">体能突破</h3>
+                        </div>
+                        <p>采用5×5力量训练法，配合HIIT间歇训练，打造希腊雕塑般的身材比例。</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="holo-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="phase-badge" style="color: var(--golden);">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <h3 class="mb-0">财富架构</h3>
+                        </div>
+                        <p>建立自动化收入系统，实践FIRE运动理念，实现财务自由与时间主权。</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="holo-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="phase-badge" style="color: var(--cyber-purple);">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3 class="mb-0">知识体系</h3>
+                        </div>
+                        <p>构建T型知识结构，每日2小时深度阅读，建立个人第二大脑知识库。</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="holo-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="phase-badge" style="color: #FF3CAC;">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="mb-0">社交升级</h3>
+                        </div>
+                        <p>筛选高价值社交圈，每周参加精英聚会，建立互利共赢的人脉网络。</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="holo-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="phase-badge" style="color: #00FFD1;">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <h3 class="mb-0">精神觉醒</h3>
+                        </div>
+                        <p>实践斯多葛哲学，培养逆境商数(AQ)，建立不可撼动的内心秩序。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 进化路径 -->
+    <section class="py-5 bg-dark2" id="path">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-4 mb-4">进化路径</h2>
+                    <p class="lead text-muted">90天系统化蜕变流程</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="accordion" id="timelineAccordion">
+                        <!-- 第一阶段 -->
+                        <div class="accordion-item bg-transparent border-0 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-dark text-white" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#phase1">
+                                    <div class="phase-badge me-3" style="color: #FF3CAC; width: 40px; height: 40px; font-size: 1rem;">
+                                        <i class="fas fa-skull"></i>
+                                    </div>
+                                    <span>第一阶段：净化 (1-7天)</span>
+                                </button>
+                            </h2>
+                            <div id="phase1" class="accordion-collapse collapse show" 
+                                data-bs-parent="#timelineAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-danger"><i class="fas fa-ban me-2"></i>戒断清单</h5>
+                                                <ul class="list-unstyled">
+                                                    <li class="d-flex mb-2">
+                                                        <i class="fas fa-cookie me-2 text-muted"></i>
+                                                        精制糖与加工食品
+                                                    </li>
+                                                    <li class="d-flex mb-2">
+                                                        <i class="fas fa-wine-glass-alt me-2 text-muted"></i>
+                                                        酒精与成瘾物质
+                                                    </li>
+                                                    <li class="d-flex">
+                                                        <i class="fas fa-desktop me-2 text-muted"></i>
+                                                        无意义网络浏览
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-success"><i class="fas fa-check-circle me-2"></i>每日必修</h5>
+                                                <ul class="list-unstyled">
+                                                    <li class="d-flex mb-2">
+                                                        <i class="fas fa-tint me-2 text-info"></i>
+                                                        3升电解质水
+                                                    </li>
+                                                    <li class="d-flex mb-2">
+                                                        <i class="fas fa-running me-2 text-info"></i>
+                                                        晨间5公里慢跑
+                                                    </li>
+                                                    <li class="d-flex">
+                                                        <i class="fas fa-book me-2 text-info"></i>
+                                                        30页经典阅读
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 第二阶段 -->
+                        <div class="accordion-item bg-transparent border-0 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-dark text-white collapsed" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#phase2">
+                                    <div class="phase-badge me-3" style="color: #6a00ff; width: 40px; height: 40px; font-size: 1rem;">
+                                        <i class="fas fa-seedling"></i>
+                                    </div>
+                                    <span>第二阶段：筑基 (8-21天)</span>
+                                </button>
+                            </h2>
+                            <div id="phase2" class="accordion-collapse collapse" 
+                                data-bs-parent="#timelineAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-4">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-purple"><i class="fas fa-dumbbell me-2"></i>力量训练</h5>
+                                                <p>开始5×5基础力量计划：</p>
+                                                <ul>
+                                                    <li>深蹲 3×5</li>
+                                                    <li>卧推 3×5</li>
+                                                    <li>硬拉 1×5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-info"><i class="fas fa-brain me-2"></i>神经重塑</h5>
+                                                <ul>
+                                                    <li>每日10分钟冥想</li>
+                                                    <li>冷暴露疗法</li>
+                                                    <li>数字排毒日</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-warning"><i class="fas fa-coins me-2"></i>财富基础</h5>
+                                                <ul>
+                                                    <li>建立收支表</li>
+                                                    <li>开设投资账户</li>
+                                                    <li>每日1小时技能学习</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 第三阶段 -->
+                        <div class="accordion-item bg-transparent border-0 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-dark text-white collapsed" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#phase3">
+                                    <div class="phase-badge me-3" style="color: #00f3ff; width: 40px; height: 40px; font-size: 1rem;">
+                                        <i class="fas fa-fire"></i>
+                                    </div>
+                                    <span>第三阶段：突破 (22-45天)</span>
+                                </button>
+                            </h2>
+                            <div id="phase3" class="accordion-collapse collapse" 
+                                data-bs-parent="#timelineAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-cyan"><i class="fas fa-chart-line me-2"></i>体能突破</h5>
+                                                <div class="mb-3">
+                                                    <h6>力量标准：</h6>
+                                                    <div class="progress mb-2">
+                                                        <div class="progress-bar" role="progressbar" style="width: 65%">深蹲1.5倍体重</div>
+                                                    </div>
+                                                    <div class="progress mb-2">
+                                                        <div class="progress-bar" role="progressbar" style="width: 45%">卧推1倍体重</div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 75%">硬拉2倍体重</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-success"><i class="fas fa-book-open me-2"></i>知识体系</h5>
+                                                <ul>
+                                                    <li>建立Zettelkasten笔记系统</li>
+                                                    <li>每周精读1本经典</li>
+                                                    <li>开始写作输出</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 第四阶段 -->
+                        <div class="accordion-item bg-transparent border-0 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-dark text-white collapsed" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#phase4">
+                                    <div class="phase-badge me-3" style="color: #00ff9d; width: 40px; height: 40px; font-size: 1rem;">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <span>第四阶段：巩固 (46-75天)</span>
+                                </button>
+                            </h2>
+                            <div id="phase4" class="accordion-collapse collapse" 
+                                data-bs-parent="#timelineAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-4">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-warning"><i class="fas fa-dumbbell me-2"></i>力量进阶</h5>
+                                                <ul>
+                                                    <li>引入531训练法</li>
+                                                    <li>增加爆发力训练</li>
+                                                    <li>每周1次体能极限测试</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-info"><i class="fas fa-network-wired me-2"></i>社交升级</h5>
+                                                <ul>
+                                                    <li>参加行业峰会</li>
+                                                    <li>建立3个高质量人脉</li>
+                                                    <li>开始公开演讲</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-success"><i class="fas fa-chart-line me-2"></i>财富增长</h5>
+                                                <ul>
+                                                    <li>启动副业项目</li>
+                                                    <li>投资组合再平衡</li>
+                                                    <li>被动收入占比20%</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 第五阶段 -->
+                        <div class="accordion-item bg-transparent border-0 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-dark text-white collapsed" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#phase5">
+                                    <div class="phase-badge me-3" style="color: #FFD700; width: 40px; height: 40px; font-size: 1rem;">
+                                        <i class="fas fa-infinity"></i>
+                                    </div>
+                                    <span>第五阶段：超越 (76-90天)</span>
+                                </button>
+                            </h2>
+                            <div id="phase5" class="accordion-collapse collapse" 
+                                data-bs-parent="#timelineAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-gold"><i class="fas fa-trophy me-2"></i>终极挑战</h5>
+                                                <ul>
+                                                    <li>72小时数字排毒</li>
+                                                    <li>马拉松耐力测试</li>
+                                                    <li>48小时知识禁食</li>
+                                                    <li>24小时慈善行动</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="holo-card p-3 h-100">
+                                                <h5 class="text-primary"><i class="fas fa-chart-pie me-2"></i>综合评估</h5>
+                                                <div class="mb-3">
+                                                    <h6>整体进度：</h6>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 85%">85%</div>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li>体脂率 ≤12%</li>
+                                                    <li>净资产增长30%</li>
+                                                    <li>建立个人知识库</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 第六阶段 -->
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-dark text-white collapsed" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#phase6">
+                                    <div class="phase-badge me-3" style="color: #FF3CAC; width: 40px; height: 40px; font-size: 1rem;">
+                                        <i class="fas fa-hand-holding-heart"></i>
+                                    </div>
+                                    <span>终阶：传承 (90天+)</span>
+                                </button>
+                            </h2>
+                            <div id="phase6" class="accordion-collapse collapse" 
+                                data-bs-parent="#timelineAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="holo-card p-4 h-100">
+                                                <h3 class="text-gradient mb-4" style="background: linear-gradient(45deg, #FFD700, #FF3CAC); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                                                    <i class="fas fa-medal me-3"></i>导师认证体系
+                                                </h3>
+                                                <div class="row text-center">
+                                                    <div class="col-4">
+                                                        <div class="hexagon bg-purple mb-2">
+                                                            <i class="fas fa-brain"></i>
+                                                        </div>
+                                                        <small>心智导师</small>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="hexagon bg-cyan mb-2">
+                                                            <i class="fas fa-dumbbell"></i>
+                                                        </div>
+                                                        <small>体能导师</small>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="hexagon bg-gold mb-2">
+                                                            <i class="fas fa-coins"></i>
+                                                        </div>
+                                                        <small>财富导师</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="holo-card p-4 h-100">
+                                                <h3 class="text-gradient mb-4" style="background: linear-gradient(45deg, #00f3ff, #6a00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                                                    <i class="fas fa-dna me-3"></i>精神传承
+                                                </h3>
+                                                <ul class="timeline-list">
+                                                    <li class="timeline-item">
+                                                        <div class="timeline-point bg-success"></div>
+                                                        <div class="timeline-content">
+                                                            <h6>建立自律社区</h6>
+                                                            <p class="text-muted">运营线下训练道场</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="timeline-item">
+                                                        <div class="timeline-point bg-warning"></div>
+                                                        <div class="timeline-content">
+                                                            <h6>出版成长手记</h6>
+                                                            <p class="text-muted">记录蜕变历程</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="timeline-item">
+                                                        <div class="timeline-point bg-info"></div>
+                                                        <div class="timeline-content">
+                                                            <h6>创立奖学金</h6>
+                                                            <p class="text-muted">资助追随者</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 见证者说 -->
+    <section class="py-5" id="testimonials">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-4 mb-4">见证者说</h2>
+                    <p class="lead text-muted">他们已经完成蜕变</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="holo-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="60" height="60" alt="用户头像">
+                            <div>
+                                <h5 class="mb-0">张明远</h5>
+                                <small class="text-muted">金融分析师 | 第7期学员</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">"90天后我的体脂从28%降到12%，收入增长3倍，建立了自己的投资组合，这是我人生最好的决定。"</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="holo-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="60" height="60" alt="用户头像">
+                            <div>
+                                <h5 class="mb-0">李雨晴</h5>
+                                <small class="text-muted">设计师 | 第5期学员</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">"不仅获得了梦寐以求的马甲线，更重要的是建立了终身受用的自律系统和知识管理方法。"</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="holo-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle me-3" width="60" height="60" alt="用户头像">
+                            <div>
+                                <h5 class="mb-0">王振国</h5>
+                                <small class="text-muted">创业者 | 第3期学员</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">"从负债到月入10万+，这个计划教会我的不仅是赚钱，而是如何设计自己的人生操作系统。"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="py-5 bg-dark2" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="display-4 mb-4">关于造神计划</h2>
+                    <p class="lead mb-4">我们相信每个人都拥有尚未开发的神性潜能。</p>
+                    <p>造神计划起源于2018年硅谷生物黑客社区，融合了现代神经科学、古希腊斯多葛哲学和东方修行智慧。经过5年迭代，已帮助3000+学员完成自我超越。</p>
+                    
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-user-shield fs-1 me-3 text-cyan"></i>
+                                <div>
+                                    <h3 class="mb-0">17</h3>
+                                    <small class="text-muted">专业导师</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-globe-asia fs-1 me-3 text-purple"></i>
+                                <div>
+                                    <h3 class="mb-0">9</h3>
+                                    <small class="text-muted">国家地区</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="holo-card p-4">
+                        <h4 class="mb-4"><i class="fas fa-paper-plane me-2"></i>加入进化之旅</h4>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control bg-dark border-secondary" placeholder="您的姓名">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control bg-dark border-secondary" placeholder="电子邮箱">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select bg-dark border-secondary">
+                                    <option>选择您的阶段</option>
+                                    <option>准备开始</option>
+                                    <option>第一阶段</option>
+                                    <option>第二阶段</option>
+                                    <option>第三阶段+</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-cyber w-100">
+                                <i class="fas fa-paper-plane me-2"></i>提交申请
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- 页脚 -->
+<footer class="py-5 bg-dark2">
+    <div class="container">
+        <div class="row">
+            <!-- 品牌信息 -->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="d-flex align-items-center mb-4">
+                    <i class="fas fa-atom fs-1 me-3" style="color: var(--neon-blue);"></i>
+                    <h3 class="mb-0">ΔSCENSION</h3>
+                </div>
+                <p class="text-muted">凡人之躯，亦可比肩神明。加入我们的进化之旅，重塑身心。</p>
+                
+                <!-- 社交媒体 -->
+                <div class="social-links mt-4">
+                    <a href="#" class="me-3 text-decoration-none" title="Twitter">
+                        <i class="fab fa-twitter fa-lg" style="color: #1DA1F2;"></i>
+                    </a>
+                    <a href="#" class="me-3 text-decoration-none" title="Instagram">
+                        <i class="fab fa-instagram fa-lg" style="color: #E1306C;"></i>
+                    </a>
+                    <a href="#" class="me-3 text-decoration-none" title="YouTube">
+                        <i class="fab fa-youtube fa-lg" style="color: #FF0000;"></i>
+                    </a>
+                    <a href="#" class="me-3 text-decoration-none" title="Discord">
+                        <i class="fab fa-discord fa-lg" style="color: #7289DA;"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 快速链接 -->
+            <div class="col-6 col-md-3 col-lg-2 mb-4 mb-md-0">
+                <h5 class="mb-4">快速导航</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#manifesto" class="text-muted text-decoration-none hover-link">核心信条</a></li>
+                    <li class="mb-2"><a href="#path" class="text-muted text-decoration-none hover-link">进化路径</a></li>
+                    <li class="mb-2"><a href="#testimonials" class="text-muted text-decoration-none hover-link">见证者</a></li>
+                    <li class="mb-2"><a href="/about.html" class="text-muted text-decoration-none hover-link">关于我们</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none hover-link">常见问题</a></li>
+                </ul>
+            </div>
+            
+            <!-- 资源链接 -->
+            <div class="col-6 col-md-3 col-lg-2 mb-4 mb-md-0">
+                <h5 class="mb-4">资源中心</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-link">训练手册</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-link">书单推荐</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-link">营养指南</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-link">冥想音频</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none hover-link">研究论文</a></li>
+                </ul>
+            </div>
+            
+            <!-- 联系方式 -->
+            <div class="col-md-4 col-lg-3 offset-lg-1">
+                <h5 class="mb-4">联系我们</h5>
+                <ul class="list-unstyled text-muted">
+                    <li class="mb-3 d-flex">
+                        <i class="fas fa-envelope me-3 mt-1" style="color: var(--neon-blue);"></i>
+                        <span>contact@ascension-project.com</span>
+                    </li>
+                    <li class="mb-3 d-flex">
+                        <i class="fas fa-map-marker-alt me-3 mt-1" style="color: var(--matrix-green);"></i>
+                        <span>上海市静安区<br>南京西路1266号</span>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fas fa-clock me-3 mt-1" style="color: var(--golden);"></i>
+                        <span>周一至周五<br>9:00 - 18:00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="my-5 border-secondary">
+        
+        <!-- 版权信息 -->
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <p class="mb-0 text-muted small">
+                    &copy; 2023 造神计划 Ascension Project. 保留所有权利。
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#" class="text-muted small text-decoration-none hover-link">隐私政策</a></li>
+                    <li class="list-inline-item mx-2">·</li>
+                    <li class="list-inline-item"><a href="#" class="text-muted small text-decoration-none hover-link">服务条款</a></li>
+                    <li class="list-inline-item mx-2">·</li>
+                    <li class="list-inline-item"><a href="#" class="text-muted small text-decoration-none hover-link">Cookie政策</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

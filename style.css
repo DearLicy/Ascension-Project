@@ -1,0 +1,281 @@
+:root {
+	--neon-blue:#00f3ff;
+	--cyber-purple:#6a00ff;
+	--matrix-green:#00ff9d;
+	--golden:#FFD700;
+	--void-black:#0C0B13;
+}
+body {
+	background:var(--void-black);
+	color:white;
+	font-family:'Segoe UI',system-ui;
+	padding-top:70px;
+	/* 为固定导航栏留出空间 */
+}
+ul,ol {
+	list-style:none !important;
+	padding-left:0;
+	/* 可选：同时移除缩进 */
+}
+/* 高斯模糊导航栏 */
+    .blur-navbar {
+	background:rgba(12,12,12,0.85) !important;
+	backdrop-filter:blur(10px);
+	-webkit-backdrop-filter:blur(10px);
+	border-bottom:1px solid rgba(255,255,255,0.1);
+	padding:15px 0;
+	transition:all 0.3s ease;
+}
+.blur-navbar.scrolled {
+	padding:10px 0;
+	box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+/* 发光Logo */
+    .glow-logo {
+	font-family:'Arial Black',sans-serif;
+	font-size:1.5rem;
+	color:white;
+	text-decoration:none;
+	position:relative;
+}
+.glow-logo i {
+	color:var(--neon-blue);
+	text-shadow:0 0 10px rgba(0,243,255,0.7);
+}
+/* 导航链接悬停动画 */
+    .hover-underline {
+	position:relative;
+	color:rgba(255,255,255,0.8) !important;
+	margin:0 15px;
+	font-weight:500;
+	transition:all 0.3s ease;
+}
+.hover-underline::after {
+	content:'';
+	position:absolute;
+	width:0;
+	height:2px;
+	bottom:-5px;
+	left:0;
+	background:var(--neon-blue);
+	transition:width 0.3s ease,box-shadow 0.3s ease;
+}
+.hover-underline:hover {
+	color:white !important;
+}
+.hover-underline:hover::after {
+	width:100%;
+	box-shadow:0 0 10px var(--neon-blue);
+}
+/* 修复后的导航栏CSS */
+.navbar {
+	padding:0.8rem 0;
+	/* 调整内边距 */
+}
+/* 确保容器flex生效 */
+.navbar > .container {
+	display:flex !important;
+	/* 强制覆盖可能存在的Bootstrap样式 */
+    justify-content:space-between;
+	align-items:center;
+	width:100%;
+}
+/* 导航菜单flex修正 */
+.navbar-nav {
+	display:flex;
+	flex-direction:row !important;
+	/* 强制横向排列 */
+    flex-wrap:nowrap;
+	margin-left:auto;
+	/* 右对齐 */
+}
+/* 响应式调整 */
+@media (max-width:992px) {
+	.navbar-nav {
+	display:none !important;
+	/* 在移动端隐藏传统导航 */
+}
+/* 可以在这里添加移动端菜单按钮的样式 */}/* 品牌标识优化 */
+.glow-logo {
+	font-size:1.25rem;
+	white-space:nowrap;
+}
+/* 悬停动画增强 */
+.hover-underline::after {
+	height:2px;
+	bottom:-3px;
+}
+/* 英雄区域 */
+    .hero-section {
+	height:100vh;
+	display:flex;
+	align-items:center;
+	background:radial-gradient(circle at center,rgba(106,0,255,0.1) 0%,rgba(12,11,19,1) 70%);
+	position:relative;
+	overflow:hidden;
+}
+.hero-title {
+	font-size:4.5rem;
+	font-weight:800;
+	background:linear-gradient(90deg,#00f3ff,#6a00ff,#00ff9d);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	margin-bottom:1.5rem;
+}
+/* 全息卡片 */
+    .holo-card {
+	background:rgba(255,255,255,0.05);
+	border:1px solid rgba(0,243,255,0.2);
+	border-radius:15px;
+	padding:2rem;
+	transition:all 0.4s ease;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+}
+.holo-card:hover {
+	transform:translateY(-10px);
+	box-shadow:0 10px 30px rgba(0,243,255,0.2);
+	border-color:var(--neon-blue);
+}
+.holo-card::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:-100%;
+	width:50%;
+	height:100%;
+	background:linear-gradient(
+            90deg,transparent,rgba(0,243,255,0.1),transparent
+        );
+	transition:0.6s;
+}
+.holo-card:hover::before {
+	left:100%;
+}
+/* 时间线样式 */
+    .timeline-item {
+	position:relative;
+	padding-left:30px;
+	margin-bottom:2rem;
+}
+.timeline-point {
+	position:absolute;
+	left:0;
+	top:5px;
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	background:var(--neon-blue);
+	box-shadow:0 0 10px var(--neon-blue);
+}
+/* 响应式调整 */
+    @media (max-width:992px) {
+	.hero-title {
+	font-size:3rem;
+}
+.navbar-collapse {
+	background:rgba(0,0,0,0.9);
+	padding:1rem;
+	margin-top:15px;
+	border-radius:10px;
+}
+}@media (max-width:768px) {
+	.hero-title {
+	font-size:2.5rem;
+}
+}/* 进度条样式 */
+    .progress {
+	height:20px;
+	background:rgba(255,255,255,0.1);
+}
+.progress-bar {
+	background:linear-gradient(90deg,var(--neon-blue),var(--matrix-green));
+}
+/* 阶段徽章 */
+    .phase-badge {
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-right:15px;
+	font-size:1.5rem;
+	box-shadow:0 0 15px currentColor;
+}
+/* 自定义按钮 */
+    .btn-cyber {
+	border:1px solid;
+	border-image:linear-gradient(45deg,var(--neon-blue),var(--matrix-green)) 1;
+	background:transparent;
+	color:white;
+	position:relative;
+	overflow:hidden;
+	transition:all 0.3s;
+}
+.btn-cyber:hover {
+	box-shadow:0 0 20px rgba(0,243,255,0.3);
+	transform:translateY(-3px);
+}
+.btn-cyber::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:-100%;
+	width:100%;
+	height:100%;
+	background:linear-gradient(90deg,transparent,rgba(0,243,255,0.2),transparent);
+	transition:0.5s;
+}
+.btn-cyber:hover::before {
+	left:100%;
+}
+/* 页脚专属样式 */
+.bg-dark2 {
+	background:#0a0a12;
+}
+.hover-link {
+	transition:all 0.3s ease;
+	position:relative;
+}
+.hover-link:hover {
+	color:white !important;
+	padding-left:5px;
+}
+.hover-link::before {
+	content:'';
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:0;
+	height:1px;
+	background:var(--neon-blue);
+	transition:width 0.3s ease;
+}
+.hover-link:hover::before {
+	width:100%;
+}
+.social-links a {
+	transition:transform 0.3s ease;
+	display:inline-block;
+}
+.social-links a:hover {
+	transform:translateY(-3px);
+}
+hr {
+	opacity:0.1;
+}
+.accordion-button {
+	border-radius:8px;
+}
+a,button {
+	outline:none !important;
+}
+/* 或者更精确的 */
+a:focus,button:focus {
+	outline:none;
+}
+.form-control {
+	color: #fff !important;
+}
